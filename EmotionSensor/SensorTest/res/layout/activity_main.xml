@@ -1,0 +1,136 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:stretchColumns="*" >
+
+    <TextView
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"
+        android:textSize="30sp"
+        android:text="Emotion Sensor"/>
+   <!--   <TableRow>
+        <TextView
+            android:id="@+id/text_temperature"
+            android:layout_column="0"
+            android:textSize="@dimen/measurement_text_size"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:layout_column="2"
+            android:id="@+id/text_pressure"
+            android:textSize="@dimen/measurement_text_size"
+            android:gravity="center_horizontal"/>
+    </TableRow>
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:textSize="@dimen/label_text_size"
+            android:gravity="center_horizontal"
+            android:text="Ambient Temperature"/>
+        <TextView
+            android:layout_column="2"
+            android:textSize="@dimen/label_text_size"
+            android:gravity="center_horizontal"
+            android:text="Barometric Pressure"/>
+    </TableRow>
+     -->
+    <TableRow>
+     <!--    <TextView
+            android:id="@+id/text_humidity"
+            android:layout_column="0"
+            android:textSize="@dimen/measurement_text_size"
+            android:gravity="center_horizontal"/> -->
+    <TextView
+            android:id="@+id/text_accelerometer"
+            android:layout_column="2"
+            android:textSize="@dimen/measurement_text_size"
+            android:gravity="center_horizontal"/>
+       
+    </TableRow>
+   
+     <TableRow>
+         <!-- <TextView
+            android:layout_column="0"
+            android:textSize="@dimen/label_text_size"
+            android:gravity="center_horizontal"
+            android:text="Humidity"/> -->
+        <TextView
+            android:layout_column="2"
+            android:textSize="@dimen/label_text_size"
+            android:gravity="center_horizontal"
+            android:text="Gesture Co-ordinates"/>
+    
+        
+    </TableRow>
+
+     <EditText
+         android:id="@+id/gestureName"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:ems="10"
+         android:text="enter sequence file name only if you are training data" />
+     
+     
+
+     <Button
+         android:id="@+id/testGesture"
+      style="?android:attr/buttonStyleSmall"
+            android:layout_width="195dp"
+            android:layout_height="wrap_content"
+         android:text="Train Gesture and Save"
+         android:onClick="testGesture"
+          />
+
+     <Button
+         android:id="@+id/button1"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="195dp"
+         android:layout_height="match_parent"
+         android:text="Know your Gesture" />
+  
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="stop" 
+         android:onClick="stopApp"
+         />
+
+     <TextView
+         android:id="@+id/textView2"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="text" />
+       <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="0"
+		android:textSize="50dp"
+		/>
+
+     <TextView
+         android:id="@+id/startAndEnd"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="idle" />
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         />
+</TableLayout>
+
+
+
+
+</ScrollView>
